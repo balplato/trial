@@ -1,10 +1,9 @@
 from selenium import webdriver
 #import time
-#import getpass
+import getpass
 chrome = webdriver.Chrome()
 login = input("Login:\n")
-password = input("Password:\n")
-#password = getpass.getpass("Password:\n") 
+password = getpass.getpass("Password:\n")
 chrome.get('https://www.google.com/')
 chrome.find_element_by_id('gb_70').click()
 chrome.find_element_by_id('identifierId').send_keys(login)
