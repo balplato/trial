@@ -1,7 +1,7 @@
 from selenium import webdriver
 #import time
 #import getpass
-chrome = webdriver.Chrome(executable_path="C:\\Users\\123\\Desktop\\chromedriver.exe")
+chrome = webdriver.Chrome()
 login = input("Login:\n")
 password = input("Password:\n")
 #password = getpass.getpass("Password:\n") 
