@@ -1,11 +1,11 @@
 from selenium import webdriver
-import time
-import getpass
-login = input("Login: ")
+import time, getpass
+
+login = input('username: ')
 password = getpass.getpass(prompt='password (hidden): ')
-# a path should be specified on your own (don't forget that for Windows we use double-backslash \\ ) 
-# however we don't need the path if there is driver in the same directory with .py
-# so, '''fox = webdriver.Firefox(executable_path="C:\\geckodriver.exe")''' is not necessary.
+
+print('Wait...')
+
 fox = webdriver.Firefox()
 fox.get('https://www.google.com')
 fox.find_element_by_id('gb_70').click()
